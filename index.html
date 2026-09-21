@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Instagram UI Practice</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram UI Practice</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#fafafa;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.card{
+  width:340px;
+  background:#fff;
+  border:1px solid #dbdbdb;
+  padding:35px;
+  text-align:center;
+}
+
+.logo{
+  font-size:38px;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:6px 0;
+  border:1px solid #dbdbdb;
+  border-radius:8px;
+  background:#fafafa;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  margin-top:12px;
+  border:none;
+  border-radius:8px;
+  background:#0095f6;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.or{
+  margin:20px 0;
+  color:#737373;
+}
+
+.footer{
+  margin-top:18px;
+  color:#737373;
+  font-size:14px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Instagram UI Practice</h1>
-  <p>This is a practice project.</p>
+
+<div class="card">
+  <div class="logo">Instagram UI Practice</div>
+
+  <input type="text" placeholder="Phone, username or email">
+  <input type="password" placeholder="Password">
+
+  <button>Log In</button>
+
+  <div class="or">──────── OR ────────</div>
+
+  <div style="color:#1877F2;font-weight:bold;">
+    Continue with Facebook
+  </div>
+
+  <div class="footer">
+    Forgot password?
+  </div>
+</div>
+
 </body>
 </html>
